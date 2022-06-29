@@ -26,7 +26,7 @@ sudo apt install -y nodejs
 
 ```
 
-[node image](/node_version.png)
+![node image](/node_version.png)
 
 ## MongoDb Installation
 
@@ -45,7 +45,7 @@ sudo npm install body-parser
 
 ```
 
-[mongo](/mongoDB.png)
+![mongo](/mongoDB.png)
 
 - Next I move on to creating a folder called 'books' via `mkdir books` to which in the file i type `npm init`. In books I create 'server.js' which in I place the following.
 
@@ -62,7 +62,7 @@ app.listen(app.get('port'), function() {
 });
 ```
 
-[server](/server.js.png)
+![server](/server.js.png)
 
 ## Express Installation and Routes Setup
 
@@ -109,7 +109,7 @@ module.exports = function(app) {
 };
 ```
 
-[route](/routes.js.png)
+![route](/routes.js.png)
 
 - We also create a folder called `models` in which we place our `book.js` which contains the following:
 
@@ -128,7 +128,7 @@ var bookSchema = mongoose.Schema( {
 var Book = mongoose.model('Book', bookSchema);
 module.exports = mongoose.model('Book', bookSchema);
 ```
-[book.js](/book.js.png)
+![book.js](/book.js.png)
 
 ## Express Installation and Routes Setup
 
@@ -175,7 +175,7 @@ app.controller('myCtrl', function($scope, $http) {
 });
 ```
 
-[scriptJS](/script.js.png)
+![scriptJS](/script.js.png)
 
 - In `public` we also create our html page in a file names index.html:
 
@@ -231,10 +231,10 @@ app.controller('myCtrl', function($scope, $http) {
   </body>
 </html>
 ```
-[pub](/pub.png)
+![pub](/pub.png)
 
 - We now start server.js via `node server.js`. This is also accompanies by changing the security groups of our EC2 to allow inbound traffic on port 3000.
 
-[port](/port.png)
-[run](/running.png)
-[application](/application1.png)
+![port](/port.png)
+![run](/running.png)
+![application](/application1.png)
